@@ -47,5 +47,14 @@ package com.mesmotronic.ane
 		{
 			return false;
 		}
+		
+		/**
+		 * Hides permanently the system status and navigation bars
+		 * @return		Boolean		false because this platform isn't supported
+		 */
+		static public function hidePermanentlySystemUI():Boolean
+		{
+			return false;
+		}
 	}
 }

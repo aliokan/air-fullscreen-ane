@@ -60,5 +60,15 @@ package com.mesmotronic.ane
 			if (!context) return false;
 			return context.call("hideSystemUI");
 		}
+		
+		/**
+		 * Hides Permanently the system status and navigation bars
+		 * @return		Boolean		false if unsuccessful or not supported, otherwise true
+		 */
+		static public function hidePermanentlySystemUI():Boolean
+		{
+			if (!context) return false;
+			return context.call("hidePermanentlySystemUI");
+		}
 	}
 }
